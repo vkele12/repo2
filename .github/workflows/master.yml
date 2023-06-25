@@ -16,6 +16,4 @@ jobs:
           workflow_file_name: master.yml
           ref: main
       - name: Deploy web app
-         run: |
-           echo "Deploy web app"
-           sleep 10s
+        run: echo " Hi Vishwanath, Hello 123 " 
