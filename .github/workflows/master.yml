@@ -2,24 +2,20 @@ name: Deploy
 on:
  push:
    branches:
-      - main
+      - master
 jobs:
   build:
-    name: Run Web App
-    runs-on: ubuntu-latest
-    steps:
-      - name: Build Web App
-        run: |
-         echo "build we app"
-         sleep 10s
+   - name: Run Web App
+     runs-on: ubuntu-latest
+     steps:
       - uses: convictional/trigger-workflow-and-wait@1.3.0
         with:
           owner: vkele12
           repo: repo2
           github_token: ${{ secrets.ACTION_KEY }}
-          workflow_file_name:master.yml
+          workflow_file_name: master.yml
           ref: main
-       - name: Deploy web app
+      - name: Deploy web app
          run: |
            echo "Deploy web app"
            sleep 10s
