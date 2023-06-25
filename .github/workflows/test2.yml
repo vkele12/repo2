@@ -1,8 +1,7 @@
 name: Your workflow
-on:
-  workflow_run:
-    workflows: ["trigger"]
-    types: [completed]
+on: 
+ repository_dispatch:
+   types: [completed]
 
   workflow_dispatch:
 
@@ -13,4 +12,4 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - run: echo ok
+      - run: echo ok ok
