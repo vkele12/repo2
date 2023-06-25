@@ -1,9 +1,10 @@
 name: Your workflow
+
 on: 
  repository_dispatch:
    types: [completed]
 
-  workflow_dispatch:
+
 
 jobs:
   check:
