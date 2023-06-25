@@ -1,4 +1,4 @@
-name: Deploy
+name: Deploy1
 on:
  push:
    branches:
@@ -18,7 +18,7 @@ jobs:
         repo: repo2
         github_token: ${{ secrets.ACTION_KEY }}
         workflow_file_name: master.yml
-        ref: main
+        ref: master
      - name: Deploy web app
        run: |
          echo "Deploy web app"
