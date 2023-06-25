@@ -12,7 +12,7 @@ jobs:
        run: |
         echo "build we app"
         sleep 10s
-     - uses: convictional/trigger-workflow-and-wait@1.6.1
+     - uses: convictional/trigger-workflow-and-wait@master
        with:
         owner: vkele12
         repo: repo1
