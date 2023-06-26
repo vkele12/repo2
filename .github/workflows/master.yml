@@ -10,7 +10,7 @@ jobs:
     steps:
      - name: Build Web App
        run: |
-        echo "build we app"
+        echo "build we app 1"
         sleep 10s
      - uses: convictional/trigger-workflow-and-wait@master
        with:
