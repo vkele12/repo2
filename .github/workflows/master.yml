@@ -11,7 +11,7 @@ jobs:
      - name: Display message
        run: echo " Hi there "
        
-     - uses: convictional/trigger-workflow-and-wait@master
+     - uses: convictional/trigger-workflow-and-wait@main
        with:
         owner: vkele12
         repo: repo1
