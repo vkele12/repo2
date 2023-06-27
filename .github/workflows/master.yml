@@ -19,5 +19,5 @@ jobs:
         workflow_file_name: master.yml
      
      - name: Display another msg
-       run: echo "How are you, 123 "
+       run: echo "How are you, 1234 "
          
