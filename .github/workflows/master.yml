@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
      - name: Display msg
-       run: echo "Hello there"
+       run: echo "Hello there are"
        
      - uses: convictional/trigger-workflow-and-wait@master
        with:
